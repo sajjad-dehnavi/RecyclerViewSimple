@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/shape_background_search.xml" value="0.131" />
+        <entry key="app/src/main/res/drawable/shape_item_food_cad.xml" value="0.131" />
+        <entry key="app/src/main/res/drawable/shape_search_view.xml" value="0.131" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.13102595797280595" />
+        <entry key="app/src/main/res/layout/dialog_add.xml" value="0.30547550432276654" />
+        <entry key="app/src/main/res/layout/dialog_delete.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/dialog_edit.xml" value="0.2994350282485876" />
+        <entry key="app/src/main/res/layout/dialog_update.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/item_food.xml" value="0.15030674846625766" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgFood"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="16:9"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/titleFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            android:tooltipText="name food"
+            app:layout_constraintLeft_toLeftOf="@id/imgFood"
+            app:layout_constraintTop_toBottomOf="@id/imgFood"
+            tools:text="Pizza" />
+
+
+        <TextView
+            android:id="@+id/descriptionFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:ellipsize="end"
+            android:textColor="@color/textColorGray"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="@id/titleFood"
+            app:layout_constraintTop_toBottomOf="@id/titleFood"
+            tools:text="Pizza is best and food" />
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="12dp"
+            android:numStars="5"
+            android:progressTint="@color/rateColor"
+            android:rating="1"
+            app:layout_constraintLeft_toLeftOf="@id/descriptionFood"
+            app:layout_constraintTop_toBottomOf="@id/descriptionFood" />
+
+
+        <TextView
+            android:id="@+id/numRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="8dp"
+            android:ellipsize="end"
+            android:textColor="@color/textColor"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/ratingBar"
+            app:layout_constraintLeft_toRightOf="@id/ratingBar"
+            app:layout_constraintTop_toTopOf="@id/ratingBar"
+            tools:ignore="SmallSp"
+            tools:text="4.5" />
+
+
+        <TextView
+            android:id="@+id/priceFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="12dp"
+            android:ellipsize="end"
+            android:textColor="@color/textColor"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/ratingBar"
+            app:layout_constraintTop_toBottomOf="@id/ratingBar"
+            tools:text="$12" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
